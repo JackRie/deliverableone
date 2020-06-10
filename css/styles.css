@@ -1,0 +1,132 @@
+/* Universal Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+span {
+    color: #ff5c0f;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 240px;
+}
+
+h1, .logo {
+    color: #20a8b4;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 10px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff5c0f;
+}
+
+/* Button Styles */
+
+.button {
+    display: block;
+    margin: 0 10px;
+}
+
+button {
+    background-color: #20a8b4;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff5c0f;
+}
+
+/* Main Styles */
+
+main {
+    margin-top: 125px;
+}
+
+h2, h3 {
+    margin: 20px;
+}
+
+img {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+/* Desktop Header Styles */
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 80px;
+    }
+
+    h1, .logo {
+        margin-right: auto;
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    li {
+        display: inline;
+        margin: 0 5px;
+    }
+
+/* Desktop Button Styles */
+
+    button {
+        width: auto;
+    }
+
+/* Desktop Main Styles */
+
+    h2, h3 {
+        margin: 12px;
+        min-width: 388px;
+    }
+
+    img {
+        display: inline-block;
+        width: 45vw;
+        max-width: 500px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+}
